@@ -1,7 +1,5 @@
 #![no_std]
 
-extern crate alloc;
-
 use core::{
     fmt::{self, Debug},
     ops::AddAssign,
@@ -225,7 +223,8 @@ where
 #[cfg(test)]
 mod tests {
     use super::*;
-
+    
+    extern crate alloc;
     use alloc::vec;
     use alloc::vec::Vec;
 
